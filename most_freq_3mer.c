@@ -15,30 +15,9 @@ get a DNA string as an input from the user
 4. increase the position by 1
 5. rpeat the process from 2 to 4
 */
-/*
-#include <stdio.h>
-#include <stdlib.h>
 
-int main(int argc, char *argv[])
-{
-    int i, k;
-    unsigned long long x, y;
-    if (argc == 1) {
-        fprintf(stderr, "Usage: %s <k>\n", argv[0]);
-        return 1;
-    }
-    k = atoi(argv[1]);
-    for (x = 0; x < 1ULL<<(2*k); ++x) {
-        for (i = 0, y = x; i < k; ++i, y >>= 2)
-            putchar("ACGT"[y&3]);
-        putchar('\n');
-    }
-    return 0;
-}
-*/
-
-//CGCCTAAATAGCCTCGCGGAGCCTTATGTCATACTCGTCCT
-//TCG
+//Input string: CGCCTAAATAGCCTCGCGGAGCCTTATGTCATACTCGTCCT
+//Outout CCT 4
 int main()
 {
     char dna[1000];
